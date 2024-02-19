@@ -8,7 +8,7 @@ This web application was build for the CMPT 375 (Web Applications) class of spri
 ### Developers
 - Name1 (role)
 - Landon Ward
-- Name3 (role)
+- Omar Al-Jaafari
 - Name4 (role)
 
 ### Designers
