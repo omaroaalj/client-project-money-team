@@ -8,3 +8,12 @@ def index(request):
 
 def contact(request):
     return render(request, "financeWebsite/contact.html")
+
+def about(request):
+    return render(request, "financeWebsite/contact.html")
+
+def services(request):
+    return render(request, "financeWebsite/contact.html")
+
+def portfolio(request):
+    return render(request, "financeWebsite/contact.html")
