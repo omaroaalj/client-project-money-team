@@ -1,3 +1,11 @@
+html {
+    color: #19263F;
+}
+
+body {
+    background-color: #FFF8E8;
+}
+
 .contact-left {
     flex-basis: 35%;
 }
@@ -12,7 +20,7 @@
 }
 
 .contact-left p i {
-    color: blueviolet;
+    color: #501537;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -31,13 +39,15 @@
 }
 
 .social-icons a:hover {
-    color: blueviolet;
+    color: #501537;
     transform: translateY(-5px);
 }
 
 .btn.btn2 {
     display: inline-block;
-    background: blueviolet;
+    background: #ababab;
+    margin-left: 330px;
+
 }
 
 .contact-right form {
@@ -50,7 +60,7 @@ form input, form textarea {
     outline: none;
     background: #262626;
     padding: 15px;
-    margin: 15px 0;
+    margin: 15px 330px;
     color: #fff;
     font-size: 18px;
     border-radius: 6px;
@@ -65,18 +75,19 @@ form .btn2 {
 
 .copyright i {
     font-size: 10px;
-    color: blueviolet;
+    color: #501537;
 }
 
 .copyright {
     width: 100%;
     text-align: center;
     padding: 25px 0;
-    background: #262626;
+    background: #fff;
     font-weight: 300;
     margin-top: 20px;
 }
 
 .contact-left h1 {
     text-align: center;
+    color: #19263F;
 }
