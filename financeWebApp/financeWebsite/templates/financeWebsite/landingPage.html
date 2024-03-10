@@ -16,6 +16,9 @@
 
     <div class="container">
     <nav>
+        <div class="logo">
+            <img src = "{% static 'financeWebsite/images/logo1.png' %}" width = "185px" height = "60px" alt = "logo">
+        </div>
         <ul id = "sidemenu">
             <li> <a href = "{% url 'financeWebsite:index' %}"> Home </a></li>
             <li> <a href = "{% url 'financeWebsite:about' %}"> About </a></li>
@@ -27,10 +30,11 @@
        <!--  <i class="fa-regular fa-bars" onclick = "openmenu()"></i> -->
     </nav>
         <div class="header-text">
-
             <p> Financial Advisor </p>
             <h1> Hi, I'm <span> Charana </span> <br> <span> De La Cruz </span>, from Cambodia </h1>
-
+        </div>
+        <div class = "img">
+            <img src = "{% static 'financeWebsite/images/IMG_3039.jpeg' %}" width = "400px" height = "600px" alt = "picture">
         </div>
     </div>
 </div>
