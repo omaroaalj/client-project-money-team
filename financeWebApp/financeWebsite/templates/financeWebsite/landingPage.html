@@ -17,7 +17,7 @@
     <div class="container">
     <nav>
         <div class="logo">
-            <img src = "{% static 'financeWebsite/images/logo1.png' %}" width = "185px" height = "60px" alt = "logo">
+            <img src = "{% static 'financeWebsite/images/logo1.png' %}" width = "185px" height = "70px" alt = "logo">
         </div>
         <ul id = "sidemenu">
             <li> <a href = "{% url 'financeWebsite:index' %}"> Home </a></li>
@@ -29,19 +29,27 @@
         </ul>
        <!--  <i class="fa-regular fa-bars" onclick = "openmenu()"></i> -->
     </nav>
-        <div class="header-text">
-            <p> Financial Advisor </p>
-            <h1> Hi, I'm <span> Charana </span> <br> <span> De La Cruz </span>, from Cambodia </h1>
+        <div class = "contain">
+            <div class = "card">
+                <div class = "photo">
+                    <img src = "{% static 'financeWebsite/images/IMG_3039.jpeg' %}" height = "600" width = "400" alt = "picture">
+                </div>
+            <div class = "intro">
+                <h1> Charana </h1>
+                <p> Hi my name is <span> Charana de La Cruz </span> and I am a financial advisor. My goal is to help individuals like yourself
+                become financially free and comfortable when it comes to making important monetary decisions.</p>
+            </div>
         </div>
-        <div class = "img">
-            <img src = "{% static 'financeWebsite/images/IMG_3039.jpeg' %}" width = "400px" height = "600px" alt = "picture">
         </div>
     </div>
 </div>
-
-
-
-
-
+            <div class="copyright">
+            <p> Copyright <i class="fa-regular fa-copyright"></i> CDLC Finance | 2024 </p>
+                <div class = "social-icons">
+                    <a href = "https://www.instagram.com/charanadelacruz/"> <i class="fa-brands fa-instagram"></i></a>
+                    <a href = ""> <i class="fa-brands fa-facebook"></i></a>
+                    <a href = ""> <i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
 </body>
 </html>
