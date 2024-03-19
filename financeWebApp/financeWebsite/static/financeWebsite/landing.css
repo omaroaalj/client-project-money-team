@@ -49,14 +49,14 @@ nav {
 }
 
 .logo {
-    margin-top: 10px;
+    margin-top: 1em;
 }
 
 nav ul li {
 
     display : inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 1em 2em;
 }
 
 nav ul li a {
@@ -105,7 +105,7 @@ nav ul li a:hover::after {
     padding: 6px;
     box-sizing: border-box;
     position: absolute;
-    bottom: 56px;
+    bottom: 78px;
     background: rgb(27, 27, 27, .5);
     color: white;
     transition: .5s;
@@ -134,7 +134,7 @@ span {
 
 .card:hover .intro {
     height: 220px;
-    bottom: 55px;
+    bottom: 4.9em;
     background: rgb(27, 27, 27, .5)
 }
 
@@ -168,7 +168,7 @@ span {
     display: inline-block;
     justify-content: space-between;
     list-style: none;
-    margin: 10px;
+    margin: .5em;
 }
 
 
