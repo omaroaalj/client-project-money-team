@@ -11,11 +11,31 @@ html {
 
 body {
     background: #fff;
-
     height: 100vh;
 }
 
+.mission {
+    position: absolute;
+    top: 20vh;
+    right: 5vw;
+    display: flex;
+}
 
+.mission p {
+    text-align: center;
+    width: 50vw;
+    padding: 50px;
+    font-size: 2em;
+    margin-top: 20vh;
+}
+
+.mission h1 {
+    position: absolute;
+    color: #6D6BE2;
+    right: 17vw;
+    margin-top: 15vh;
+    font-size: 4em;
+}
 
 .container {
     padding: 10px 10%;
@@ -29,14 +49,14 @@ nav {
 }
 
 .logo {
-    margin-top: 10px;
+    margin-top: 1em;
 }
 
 nav ul li {
 
     display : inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 1em 2em;
 }
 
 nav ul li a {
@@ -47,11 +67,10 @@ nav ul li a {
 }
 
 nav ul li a::after {
-
     content: '';
     width: 0;
     height: 3px;
-    background: blue;
+    background: #6D6BE2;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -59,9 +78,7 @@ nav ul li a::after {
 }
 
 nav ul li a:hover::after {
-
     width: 100%;
-
 }
 
 .contain {
@@ -83,12 +100,12 @@ nav ul li a:hover::after {
 }
 
 .intro {
-    height: 70px;
+    height: 75px;
     width: 400px;
     padding: 6px;
     box-sizing: border-box;
     position: absolute;
-    bottom: 136px;
+    bottom: 78px;
     background: rgb(27, 27, 27, .5);
     color: white;
     transition: .5s;
@@ -117,7 +134,7 @@ span {
 
 .card:hover .intro {
     height: 220px;
-    bottom: 135px;
+    bottom: 4.9em;
     background: rgb(27, 27, 27, .5)
 }
 
@@ -151,7 +168,13 @@ span {
     display: inline-block;
     justify-content: space-between;
     list-style: none;
-    margin: 10px;
+    margin: .5em;
 }
+
+
+
+
+
+
 
 
