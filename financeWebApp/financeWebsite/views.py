@@ -10,10 +10,10 @@ def contact(request):
     return render(request, "financeWebsite/contact.html")
 
 def about(request):
-    return render(request, "financeWebsite/contact.html")
+    return HttpResponse("About page (in development)")
 
 def services(request):
     return render(request, "financeWebsite/services.html")
 
 def portfolio(request):
-    return render(request, "financeWebsite/contact.html")
+    return HttpResponse("Portfolio page (in development)")
