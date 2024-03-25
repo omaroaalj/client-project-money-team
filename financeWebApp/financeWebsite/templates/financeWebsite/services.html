@@ -1,0 +1,69 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services Page </title>
+    <link rel = "stylesheet" href = "{% static 'financeWebsite/services.css' %}">
+    <!-- <script src = "interact.js"> </script> -->
+    <script src="https://kit.fontawesome.com/4e5c25ee1a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+    <nav>
+        <div class="logo">
+            <img src = "{% static 'financeWebsite/images/logo1.png' %}" width = "185px" height = "70px" alt = "logo">
+        </div>
+        <ul id = "sidemenu">
+            <li> <a href = "{% url 'financeWebsite:index' %}"> Home </a></li>
+            <li> <a href = "{% url 'financeWebsite:about' %}"> About </a></li>
+            <li> <a href = "{% url 'financeWebsite:services' %}"> Services </a></li>
+            <li> <a href = "{% url 'financeWebsite:portfolio' %}"> Portfolio </a></li>
+            <li> <a href = "{% url 'financeWebsite:contact' %}"> Contact </a></li>
+           <!--  <i class="fa-regular fa-xmark" onclick = "closemenu()"></i> -->
+        </ul>
+       <!--  <i class="fa-regular fa-bars" onclick = "openmenu()"></i> -->
+    </nav>
+        <div class="service-container">
+    <div class="service-box">
+        <img src = "{% static 'financeWebsite/images/retirement plans.png' %}" height = "200" width = "400" alt = "picture">
+        <h2>Retirement Planning</h2>
+        <p>Description of Tax-free Retirement Planning, for now this is just a placeholder while we wait for to give us more details on what she wants.</p>
+        <a href="link_to_more_info" class="learn-more">Learn more</a>
+    </div>
+    <div class="service-box">
+        <img src = "{% static 'financeWebsite/images/alt investments.png' %}" height = "200" width = "400" alt = "picture">
+        <h2>Alternative Investments</h2>
+        <p> Description of investments, for now this is just a placeholder while we wait for  to give us more details on what she       .</p>
+        <a href="link_to_more_info" class="learn-more">Learn more</a>
+    </div>
+    <div class="service-box">
+        <img src = "{% static 'financeWebsite/images/life insurance.png' %}" height = "200" width = "400" alt = "picture">
+        <h2>Life Insurance Policies</h2>
+        <p>Description of Life Insurance, for now this is just a placeholder while we wait for  to give us more details on what she wants.</p>
+        <a href="link_to_more_info" class="learn-more">Learn more</a>
+    </div>
+    <div class="service-box">
+        <img src = "{% static 'financeWebsite/images/healthcare.jpg' %}" height = "200" width = "400" alt = "picture">
+        <h2>Healthcare Planning</h2>
+        <p>Description of Healthcare plans, for now this is just a placeholder while we wait for  to give us more details on what she wants.</p>
+        <a href="link_to_more_info" class="learn-more">Learn more</a>
+    </div>
+</div>
+
+
+            <div class="copyright">
+            <p> Copyright <i class="fa-regular fa-copyright"></i> CDLC Finance | 2024 </p>
+                <div class = "social-icons">
+                    <a href = "https://www.instagram.com/charanadelacruz/"> <i class="fa-brands fa-instagram"></i></a>
+                    <a href = ""> <i class="fa-brands fa-facebook"></i></a>
+                    <a href = ""> <i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+    </div>
+    </div>
+</body>
+</html>

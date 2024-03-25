@@ -13,7 +13,7 @@ def about(request):
     return render(request, "financeWebsite/contact.html")
 
 def services(request):
-    return render(request, "financeWebsite/contact.html")
+    return render(request, "financeWebsite/services.html")
 
 def portfolio(request):
     return render(request, "financeWebsite/contact.html")
