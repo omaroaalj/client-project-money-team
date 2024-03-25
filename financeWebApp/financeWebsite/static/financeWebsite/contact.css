@@ -1,9 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+    box-sizing: border-box;
+}
+
 html {
     color: #19263F;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color:#FFF8E8;
+    height: 100vh;
+}
+
+.container {
+    padding: 10px 10%;
 }
 
 .contact-left {
@@ -20,7 +32,7 @@ body {
 }
 
 .contact-left p i {
-    color: #501537;
+    color: #6d6be2;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -39,7 +51,7 @@ body {
 }
 
 .social-icons a:hover {
-    color: #501537;
+    color: #6d6be2;
     transform: translateY(-5px);
 }
 
@@ -90,4 +102,43 @@ form .btn2 {
 .contact-left h1 {
     text-align: center;
     color: #19263F;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    margin-top: 1em;
+}
+
+nav ul li {
+
+    display : inline-block;
+    list-style: none;
+    margin: 1em 2em;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #6D6BE2;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
 }
