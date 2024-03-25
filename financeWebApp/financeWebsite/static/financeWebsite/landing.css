@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    background: #fff;
+    background: #F2F8F9;
     height: 100vh;
 }
 
@@ -27,6 +27,7 @@ body {
     padding: 50px;
     font-size: 2em;
     margin-top: 20vh;
+    color: #5A5A54;
 }
 
 .mission h1 {
@@ -53,7 +54,6 @@ nav {
 }
 
 nav ul li {
-
     display : inline-block;
     list-style: none;
     margin: 1em 2em;
