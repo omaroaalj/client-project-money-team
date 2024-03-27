@@ -50,7 +50,9 @@ nav {
 }
 
 .logo {
-    margin-top: 1em;
+    margin-top: 0;
+    margin-right: 5em;
+
 }
 
 nav ul li {
@@ -86,26 +88,26 @@ nav ul li a:hover::after {
 }
 
 .photo {
-    height: 600px;
-    width: 400px;
-    border-radius: 3px;
+    height: 37.5em;
+    width: 25em;
+    border-radius: 0.1875em;
     transition: .5s;
 }
 
 .card {
-    height: 600px;
-    margin: 70px 10px;
-    box-shadow: 5px 5px 20px black;
+    height: 37.5em;
+    margin: 4.375em 0.625em;
+    box-shadow: 0.3125em 0.3125em 1.25em black;
     overflow: hidden;
 }
 
 .intro {
-    height: 75px;
-    width: 400px;
-    padding: 6px;
+    height: 4.6875em;
+    width: 25em;
+    padding: 0.375em;
     box-sizing: border-box;
     position: absolute;
-    bottom: 78px;
+    bottom: 2.7em;
     background: rgb(27, 27, 27, .5);
     color: white;
     transition: .5s;
@@ -118,8 +120,8 @@ h1 {
 }
 
 .intro p{
-    font-size: 20px;
-    margin: 5px;
+    font-size: 1.25em;
+    margin: 0.3125em;
     visibility: hidden;
     opacity: 0;
 }
@@ -133,8 +135,8 @@ span {
 }
 
 .card:hover .intro {
-    height: 220px;
-    bottom: 4.9em;
+    height: 13.75em;
+    bottom: 2.55em;
     background: rgb(27, 27, 27, .5)
 }
 

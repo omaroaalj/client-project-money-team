@@ -26,7 +26,8 @@ nav {
 }
 
 .logo {
-    margin-top: 10px;
+    margin-top: 0;
+    margin-right: 5em;
 }
 
 nav ul li {
@@ -46,7 +47,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #2C96CE;
+    background: #6D6BE2;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -168,7 +169,7 @@ span {
     left: -1px;
     right: -1px;
     bottom: -1px;
-    border: 2px solid #2C96CE;
+    border: 2px solid #6D6BE2;
     border-radius: 10px;
     pointer-events: none;
 }
