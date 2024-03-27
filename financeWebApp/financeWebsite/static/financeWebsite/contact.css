@@ -143,3 +143,13 @@ nav ul li a::after {
 nav ul li a:hover::after {
     width: 100%;
 }
+
+#submit-temp {
+    border: 1px solid black;
+    width: fit-content;
+    border-spacing: inherit;
+    margin-left: 35rem;
+    padding: 0.5rem;
+    background-color: #6d6be2;
+    color: white;
+}
