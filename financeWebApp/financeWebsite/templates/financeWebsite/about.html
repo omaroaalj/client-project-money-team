@@ -1,0 +1,38 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me</title>
+   <link rel = "stylesheet" href = "{% static "financeWebsite/about.css" %}">
+</head>
+<body>
+<div id = "header">
+    <nav>
+        <div class="logo">
+            <img src = "{% static 'financeWebsite/images/logo4.jpeg' %}" width = "185px" height = "70px" alt = "logo">
+        </div>
+        <ul id = "sidemenu">
+            <li> <a href = "{% url 'financeWebsite:index' %}"> Home </a></li>
+            <li> <a href = "{% url 'financeWebsite:about' %}"> About </a></li>
+            <li> <a href = "{% url 'financeWebsite:services' %}"> Services </a></li>
+            <li> <a href = "{% url 'financeWebsite:portfolio' %}"> Portfolio </a></li>
+            <li> <a href = "{% url 'financeWebsite:contact' %}"> Contact </a></li>
+            <i class="fa-regular fa-xmark" onclick = "closemenu()"></i>
+        </ul>
+         <i class="fa-regular fa-bars" onclick = "openmenu()"></i>
+    </nav>
+    <h1>Meet Charana</h1>
+    
+</div>
+    
+<div id = "family">
+    
+    
+</div>
+
+
+
+</body>
+</html>
