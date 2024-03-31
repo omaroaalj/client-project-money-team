@@ -9,7 +9,7 @@ This web application was build for the CMPT 375 (Web Applications) class of spri
 - Drake AuClaire (Full-Stack Developer) 
 - Landon Ward (Frontend Developer) 
 - Omar Al-Jaafari (Backend Developer) 
-- Name4 (role)
+- Ellie Berg(Frontend Developer)
 
 ### Designers
 - Name1 (role)
