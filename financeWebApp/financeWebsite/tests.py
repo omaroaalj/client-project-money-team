@@ -4,6 +4,7 @@ from django.urls import reverse
 # Create your tests here.
 
 
+# Check if views are there and have a code of 200
 class ViewTests(TestCase):
 
     def test_index(self):
