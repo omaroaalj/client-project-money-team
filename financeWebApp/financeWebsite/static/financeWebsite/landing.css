@@ -106,8 +106,8 @@ nav ul li a:hover::after {
     width: 25em;
     padding: 0.375em;
     box-sizing: border-box;
-    position: absolute;
-    bottom: 2.7em;
+    position: relative;
+    bottom: 4em;
     background: rgb(27, 27, 27, .5);
     color: white;
     transition: .5s;
@@ -136,7 +136,7 @@ span {
 
 .card:hover .intro {
     height: 13.75em;
-    bottom: 2.55em;
+    bottom: 12em;
     background: rgb(27, 27, 27, .5)
 }
 
