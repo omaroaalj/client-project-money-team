@@ -32,7 +32,7 @@ body {
 
 .mission h1 {
     position: absolute;
-    color: #6D6BE2;
+    color: #2C96CE;
     right: 17vw;
     margin-top: 15vh;
     font-size: 4em;
@@ -72,7 +72,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #6D6BE2;
+    background: #2C96CE;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -199,7 +199,7 @@ nav .fa-regular {
     }
 
     nav ul {
-        background: #6D6BE2;
+        background: #2C96CE;
         position: fixed;
         top: 0;
         right: -200px;
