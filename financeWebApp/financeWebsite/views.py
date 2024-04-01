@@ -10,7 +10,7 @@ def contact(request):
     return render(request, "financeWebsite/contact.html")
 
 def about(request):
-    return HttpResponse("About page (in development)")
+    return render(request, "financeWebsite/about.html")
 
 def services(request):
     return render(request, "financeWebsite/services.html")
