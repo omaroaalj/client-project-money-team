@@ -1,13 +1,16 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import get_object_or_404, render
+from django.http import HttpResponse, HttpResponseRedirect
 
+from .models import ContactEntry
+from .forms import ContactForm
 
 # Create your views here.
 def index(request):
     return render(request, "financeWebsite/landingPage.html")
 
 def contact(request):
-    return render(request, "financeWebsite/contact.html")
+    form = ContactForm()
+    return render(request, "financeWebsite/contact.html", {"form": form})
 
 def about(request):
     return render(request, "financeWebsite/about.html")
@@ -17,3 +20,22 @@ def services(request):
 
 def portfolio(request):
     return HttpResponse("Portfolio page (in development)")
+
+
+def submit_contact(request):
+    if request.method == "POST":
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            new_name = form.cleaned_data["name"]
+            new_email = form.cleaned_data["email"]
+            new_message = form.cleaned_data["message"]
+            contact_entry = ContactEntry(name=new_name, email=new_email, message=new_message)
+            contact_entry.save()
+            return HttpResponseRedirect("/thanks/")
+    else:
+        form = ContactForm()
+    return render(request, "financeWebsite/contact.html", {"form": form})
+
+
+def thanks(request):
+    return render(request, "financeWebsite/thanks.html")
