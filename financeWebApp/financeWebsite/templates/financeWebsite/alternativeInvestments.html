@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Alternative Investments </title>
+    <link rel = "stylesheet" href = "{% static "financeWebsite/landing.css" %}">
+    <!-- <script src = "interact.js"> </script> -->
+    <script src="https://kit.fontawesome.com/4e5c25ee1a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="contact">
+    <div class="container">
+        <nav>
+        <div class="logo">
+            <img src = "{% static 'financeWebsite/images/realLogo.png' %}" width = "225px" height = "120px" alt = "logo">
+        </div>
+        <ul id = "sidemenu">
+            <li> <a href = "{% url 'financeWebsite:index' %}"> Home </a></li>
+            <li> <a href = "{% url 'financeWebsite:about' %}"> About </a></li>
+            <li> <a href = "{% url 'financeWebsite:services' %}"> Services </a></li>
+            <li> <a href = "{% url 'financeWebsite:contact' %}"> Contact </a></li>
+           <!--  <i class="fa-regular fa-xmark" onclick = "closemenu()"></i> -->
+        </ul>
+       <!--  <i class="fa-regular fa-bars" onclick = "openmenu()"></i> -->
+        </nav>
+    </div>
+    </div>
+</body>
+</html>

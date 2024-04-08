@@ -15,5 +15,14 @@ def about(request):
 def services(request):
     return render(request, "financeWebsite/services.html")
 
-def portfolio(request):
-    return HttpResponse("Portfolio page (in development)")
+def retirement(request):
+    return render(request,"financeWebsite/retirement.html")
+
+def alternativeInvestments(request):
+    return render(request,"financeWebsite/alternativeInvestments.html")
+
+def lifeInsurance(request):
+    return render(request,"financeWebsite/lifeInsurance.html")
+
+def healthcare(request):
+    return render(request,"financeWebsite/healthcare.html")
