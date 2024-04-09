@@ -40,6 +40,7 @@ nav ul li a {
     color: black;
     text-decoration: none;
     font-size: 18px;
+    font-family: "Cantana One";
     position: relative;
 }
 
@@ -67,6 +68,7 @@ nav ul li a:hover::after {
    text-align: center;
      display: flex;
     align-items: center;
+
 }
 .picture img{
     border: .5vh solid;
@@ -99,12 +101,16 @@ nav ul li a:hover::after {
 }
 p{
     font-size: 1.50rem;
-    color: #30302E;
+    color: #5A5A54;
     font-weight: normal;
+    font-family: "PT Sans";
 }
 h1{
-    font-size:2.5rem;
-    color:#2C96CE;
-
+    font-size:2.25rem;
+    color:#30302E;
+    margin-left: 2.25rem;
+    margin-right: 2.25rem;
+    font-family: "Cantana One";
+    white-space:nowrap;
 
 }

@@ -14,6 +14,19 @@ body {
     height: 100vh;
     background-color: #F2F8F9;
 }
+#begin{
+   text-align: center;
+    display: flex;
+    align-items: center;
+}
+h1{
+    font-size:2.25rem;
+    color:#30302E;
+    margin-left: 2.25rem;
+    margin-right: 2.25rem;
+    font-family: "Cantana One";
+    white-space:nowrap;
+}
 
 .container {
     padding: 10px 10%;
