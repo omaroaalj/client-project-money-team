@@ -29,6 +29,7 @@ class ViewTests(TestCase):
         self.assertEqual(response.status_code, 200)
 
 
+# Check if form handles requests as expected
 class FormTests(TestCase):
     def test_name_only(self):
         response = self.client.post(reverse("financeWebsite:submit_contact"), {"name": "TestName"})
@@ -50,7 +51,8 @@ class FormTests(TestCase):
         self.assertQuerySetEqual(ContactEntry.objects.all(), [])
 
     def test_valid_form_submission(self):
-        response = self.client.post(reverse("financeWebsite:submit_contact"), {"name": "Test", "email": "test@test.com", "message": "This is the message."})
+        post_data = {"name": "Test", "email": "test@test.com", "message": "This is the message."}
+        response = self.client.post(reverse("financeWebsite:submit_contact"), post_data)
         self.assertEqual(ContactEntry.objects.count(), 1)
         entry = ContactEntry.objects.get(pk=1)
         self.assertEqual(entry.name, "Test")
@@ -59,7 +61,8 @@ class FormTests(TestCase):
         self.assertEqual(response.status_code, 302)
 
     def test_invalid_email(self):
-        response = self.client.post(reverse("financeWebsite:submit_contact"), {"name": "Test", "email": "InvalidEmail", "message": "This is the message."})
+        post_data = {"name": "Test", "email": "InvalidEmail", "message": "This is the message."}
+        response = self.client.post(reverse("financeWebsite:submit_contact"), post_data)
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "Contact Me")
         self.assertContains(response, "Enter a valid email address.")
@@ -68,7 +71,8 @@ class FormTests(TestCase):
     def test_long_name(self):
         name_length = 101
         long_name = "".join(["a" for _ in range(name_length)])
-        response = self.client.post(reverse("financeWebsite:submit_contact"), {"name": long_name, "email": "test@test.com", "message": "This is the message"})
+        post_data = {"name": long_name, "email": "test@test.com", "message": "This is the message"}
+        response = self.client.post(reverse("financeWebsite:submit_contact"), post_data)
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "Contact Me")
         self.assertContains(response, "Ensure this value has at most 100 characters (it has " + str(name_length) + ").")
