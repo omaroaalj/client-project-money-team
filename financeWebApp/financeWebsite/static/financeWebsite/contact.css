@@ -1,10 +1,8 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
     box-sizing: border-box;
 }
-
 
 html {
     color: #19263F;
@@ -27,6 +25,10 @@ h1{
     margin-right: 2.25rem;
     font-family: "Cantana One";
     white-space:nowrap;
+}
+
+p {
+    font-family: "PT Sans";
 }
 
 .container {
@@ -137,6 +139,34 @@ nav ul li a:hover::after {
     color: white;
 }
 
+.copyright i {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 9rem;
+    color: white;
+}
+
+.footer {
+    font-family: "Montserrat";
+}
+
+.social-icons {
+    display: inline-block;
+    justify-content: space-between;
+    list-style: none;
+    margin: .5em;
+}
+
 nav .fa-regular {
     display: none;
 }
@@ -221,27 +251,4 @@ nav .fa-regular {
     }
 }
 
-.copyright i {
-    font-size: 20px;
-    color: #fff;
-    text-align: center;
-    justify-content: center;
-}
-
-.copyright {
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    background: #262626;
-    font-weight: 300;
-    margin-top: 20px;
-    color: white;
-}
-
-.social-icons {
-    display: inline-block;
-    justify-content: space-between;
-    list-style: none;
-    margin: .5em;
-}
 

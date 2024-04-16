@@ -365,6 +365,10 @@ nav .fa-regular {
     }
 }
 
+.footer {
+    font-family: "Montserrat";
+}
+
 #msg {
     color: #61b752;
     margin-top: -40px;
@@ -384,7 +388,7 @@ nav .fa-regular {
     padding: 25px 0;
     background: #262626;
     font-weight: 300;
-    margin-top: 20px;
+    margin-top: 7rem;
     color: white;
 }
 

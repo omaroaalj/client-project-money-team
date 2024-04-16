@@ -129,6 +129,10 @@ h1 {
     font-family: "PT Sans";
 }
 
+.footer {
+    font-family: "Montserrat";
+}
+
 span {
     font-weight: bold;
 }
@@ -175,11 +179,6 @@ span {
     list-style: none;
     margin: .5em;
 }
-
-.intro i {
-
-}
-
 
 
 /* --------- CSS for Small Screen -------- */
@@ -264,12 +263,14 @@ nav .fa-regular {
         margin-right: 20px;
     }
 
-    .contact-left, .contact-right {
-        flex-basis: 100%;
-    }
-
     .copyright {
         font-size: 14px;
+    }
+
+    iframe {
+        width: 10vw;
+        height: 12vh;
+        align-items: center;
     }
 }
 
@@ -278,52 +279,6 @@ nav .fa-regular {
     margin-top: -40px;
     display: block;
 }
-
-/* Add this at the end of your existing CSS */
-@media only screen and (max-width: 600px) {
-
-    /* Adjust the .contain layout */
-    .contain {
-        flex-direction: column; /* Stack the children vertically */
-        align-items: center; /* Center-align the items for better presentation */
-    }
-
-    /* Adjust the mission statement positioning */
-    .mission {
-        position: relative; /* Use relative positioning for natural flow */
-        top: auto; /* Reset top positioning */
-        right: auto; /* Reset right positioning */
-        width: 80%; /* Adjust the width to fit smaller screens, you can tweak this value */
-        margin: 20px 0; /* Add some margin above and below for spacing */
-    }
-
-    /* Adjust the mission statement text size if necessary */
-    .mission h1 {
-        position: absolute;
-        font-size: 2.5em; /* Adjust the size to fit smaller screens */
-        right: auto; /* Reset any specific right positioning */
-        margin-top: 2px; /* Adjust the margin top for spacing
-        text-align: center; /* Center-align the heading */
-        right: 1vw;
-    }
-
-    .mission p {
-        font-size: 1em; /* Adjust the paragraph text size for readability on small screens */
-        padding: 20px; /* Adjust padding to fit smaller screens */
-        width: auto; /* Let the width naturally adjust to the parent container */
-        margin-top: 30px;
-        right: 1vw;
-    }
-
-    /* Here, adjust any other elements that need to change on smaller screens */
-    /* For example, if the .photo needs to resize or reposition */
-    .photo {
-        width: 90%; /* Example adjustment */
-        height: auto; /* Maintain aspect ratio */
-        margin-bottom: 20px; /* Add some space below the photo */
-    }
-}
-
 
 
 

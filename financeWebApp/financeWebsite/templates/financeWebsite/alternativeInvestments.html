@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <title> Alternative Investments </title>
-    <link rel = "stylesheet" href = "{% static "financeWebsite/landing.css" %}">
+    <link rel = "stylesheet" href = "{% static "financeWebsite/childPages.css" %}">
     <!-- <script src = "interact.js"> </script> -->
     <script src="https://kit.fontawesome.com/4e5c25ee1a.js" crossorigin="anonymous"></script>
 </head>
@@ -14,18 +14,49 @@
     <div class="container">
         <nav>
         <div class="logo">
-            <img src = "{% static 'financeWebsite/images/realLogo.png' %}" width = "225px" height = "120px" alt = "logo">
+            <img src = "{% static 'financeWebsite/images/logo 1.2.png' %}" width = "350px" height = "130px" alt = "logo">
         </div>
         <ul id = "sidemenu">
             <li> <a href = "{% url 'financeWebsite:index' %}"> Home </a></li>
             <li> <a href = "{% url 'financeWebsite:about' %}"> About </a></li>
             <li> <a href = "{% url 'financeWebsite:services' %}"> Services </a></li>
             <li> <a href = "{% url 'financeWebsite:contact' %}"> Contact </a></li>
-           <!--  <i class="fa-regular fa-xmark" onclick = "closemenu()"></i> -->
+           <i class="fa-regular fa-xmark" onclick = "closemenu()"></i>
         </ul>
-       <!--  <i class="fa-regular fa-bars" onclick = "openmenu()"></i> -->
+       <i class="fa-regular fa-bars" onclick = "openmenu()"></i>
         </nav>
     </div>
     </div>
+        <h1 class = "title"> Alternative Investments </h1>
+        <div class = "contain">
+        <iframe width="700" height="400" src="https://www.youtube.com/embed/AE4a9Y8MYv8?si=WDzLSMC6Ie5iN7cb&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p class = "description">In this comprehensive YouTube video, we delve into the essential
+            strategies and tips for planning a secure and fulfilling retirement. Whether you're just starting your
+            career or nearing retirement age, this guide offers valuable insights to help you build a strong financial
+            foundation for your golden years.</p>
+            <div class="copyright">
+            <p class = "footer"> Copyright <i class="fa-regular fa-copyright"></i> Charana de la Cruz | 2024 </p>
+                <div class = "social-icons">
+                    <a href = "https://www.instagram.com/charanadelacruz/"> <i class="fa-brands fa-instagram"></i></a>
+                    <a href = ""> <i class="fa-brands fa-facebook"></i></a>
+                    <a href = ""> <i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+<script>
+var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+
+        sidemenu.style.right = "0";
+
+    }
+    function closemenu() {
+
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
 </body>
 </html>
