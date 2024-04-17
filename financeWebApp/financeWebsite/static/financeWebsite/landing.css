@@ -190,20 +190,40 @@ nav .fa-regular {
 @media only screen and (max-width: 600px) {
 
     .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Optional: center-align items */
+        flex-direction: column; /* Stack the children vertically */
+        align-items: center; /* Center-align the items for better presentation */
     }
 
-
-    .header-text {
-        font-size: 16px;
-        order: 1; /* Move header text below image */
-        margin-top: 10px; /* Adjust margin as needed */
+    /* Adjust the mission statement positioning */
+    .mission {
+        position: relative; /* Use relative positioning for natural flow */
+        top: auto; /* Reset top positioning */
+        right: auto; /* Reset right positioning */
+        width: 80%; /* Adjust the width to fit smaller screens, you can tweak this value */
+        margin-left: 7rem; /* Add some margin above and below for spacing */
     }
 
-    .header-text h1 {
-        font-size: 30px;
+    /* Adjust the mission statement text size if necessary */
+    .mission h1 {
+        font-size: 2.5em; /* Adjust the size to fit smaller screens */
+        right: auto; /* Reset any specific right positioning */
+        margin-top: 10px; /* Adjust the margin top for spacing */
+        text-align: center; /* Center-align the heading */
+    }
+
+    .mission p {
+        font-size: 1em; /* Adjust the paragraph text size for readability on small screens */
+        width: auto; /* Let the width naturally adjust to the parent container */
+        margin-right: 7rem;
+        margin-top: 1rem;
+    }
+
+    /* Here, adjust any other elements that need to change on smaller screens */
+    /* For example, if the .photo needs to resize or reposition */
+    .photo {
+        width: 90%; /* Example adjustment */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 20px; /* Add some space below the photo */
     }
 
     nav .fa-regular {
@@ -241,23 +261,6 @@ nav .fa-regular {
         cursor: pointer;
     }
 
-    .sub-title {
-        font-size: 40px;
-    }
-
-    .about-col-1, .about-col-2 {
-        flex-basis: 100%;
-    }
-
-    .about-col-1 {
-        margin-bottom: 30px;
-    }
-
-    .about-col-2 {
-        font-size: 14px;
-
-    }
-
     .tab-links {
         font-size: 16px;
         margin-right: 20px;
@@ -266,12 +269,6 @@ nav .fa-regular {
     .copyright {
         font-size: 14px;
     }
-
-    iframe {
-        width: 10vw;
-        height: 12vh;
-        align-items: center;
-    }
 }
 
 #msg {
@@ -279,6 +276,7 @@ nav .fa-regular {
     margin-top: -40px;
     display: block;
 }
+
 
 
 
