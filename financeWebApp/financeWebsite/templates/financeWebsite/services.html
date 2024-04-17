@@ -8,51 +8,79 @@
     <title>Services Page </title>
     <link rel = "stylesheet" href = "{% static 'financeWebsite/services.css' %}">
     <!-- <script src = "interact.js"> </script> -->
-    <script src="https://kit.fontawesome.com/4e5c25ee1a.js" crossorigin="anonymous"></script>
+     <script src="https://kit.fontawesome.com/4e5c25ee1a.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
     <div class="container">
     <nav>
         <div class="logo">
-            <img src = "{% static 'financeWebsite/images/realLogo.png' %}" width = "225px" height = "120px" alt = "logo">
+            <img src = "{% static 'financeWebsite/images/logo 1.2.png' %}" width = "350px" height = "130px" alt = "logo">
         </div>
         <ul id = "sidemenu">
             <li> <a href = "{% url 'financeWebsite:index' %}"> Home </a></li>
             <li> <a href = "{% url 'financeWebsite:about' %}"> About </a></li>
             <li> <a href = "{% url 'financeWebsite:services' %}"> Services </a></li>
             <li> <a href = "{% url 'financeWebsite:contact' %}"> Contact </a></li>
-           <!--  <i class="fa-regular fa-xmark" onclick = "closemenu()"></i> -->
+           <i class="fa-regular fa-xmark" onclick = "closemenu()"></i>
         </ul>
-       <!--  <i class="fa-regular fa-bars" onclick = "openmenu()"></i> -->
+       <i class="fa-regular fa-bars" onclick = "openmenu()"></i>
     </nav>
+        <div id= "begin">
+        <hr width="45%;" color= 2C96CE size="5">
+        <h1 id="text">Services</h1>
+        <hr width="45%;" color=2C96CE size="5">
+    </div>
         <div class="service-container">
     <div class="service-box">
         <img src = "{% static 'financeWebsite/images/retirement plans.png' %}" height = "200" width = "400" alt = "picture">
         <h2>Retirement Planning</h2>
         <p> For now this is just a placeholder while we wait for to give us more details on what she wants.</p>
-        <a href="link_to_more_info" class="learn-more">Learn more</a>
+        <a href = "{% url 'financeWebsite:retirement' %}" class="learn-more"> Learn More </a>
     </div>
     <div class="service-box">
         <img src = "{% static 'financeWebsite/images/alt investments.png' %}" height = "200" width = "400" alt = "picture">
         <h2>Alternative Investments</h2>
         <p> For now this is just a placeholder while we wait for  to give us more details on what she       .</p>
-        <a href="link_to_more_info" class="learn-more">Learn more</a>
+        <a href = "{% url 'financeWebsite:alternativeInvestments' %}" class="learn-more"> Learn More </a>
     </div>
     <div class="service-box">
         <img src = "{% static 'financeWebsite/images/life insurance.png' %}" height = "200" width = "400" alt = "picture">
         <h2>Life Insurance Policies</h2>
         <p> For now this is just a placeholder while we wait for  to give us more details on what she wants.</p>
-        <a href="link_to_more_info" class="learn-more">Learn more</a>
+        <a href = "{% url 'financeWebsite:lifeInsurance' %}" class="learn-more"> Learn More </a>
     </div>
     <div class="service-box">
         <img src = "{% static 'financeWebsite/images/healthcare.jpg' %}" height = "200" width = "400" alt = "picture">
-        <h2>Healthcare Planning</h2>
+        <h2>Health and Wellness</h2>
         <p> For now this is just a placeholder while we wait for  to give us more details on what she wants.</p>
-        <a href="link_to_more_info" class="learn-more">Learn more</a>
+        <a href = "{% url 'financeWebsite:healthcare' %}" class="learn-more"> Learn More </a>
     </div>
 </div>
     </div>
     </div>
+
+    <div class="copyright">
+            <p class = "footer"> Copyright <i class="fa-regular fa-copyright"></i> Charana de la Cruz | 2024 </p>
+                <div class = "social-icons">
+                    <a href = "https://www.instagram.com/charanadelacruz/"> <i class="fa-brands fa-instagram"></i></a>
+                    <a href = ""> <i class="fa-brands fa-facebook"></i></a>
+                    <a href = ""> <i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+
+<script>
+var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+
+        sidemenu.style.right = "0";
+
+    }
+    function closemenu() {
+
+        sidemenu.style.right = "-200px";
+    }
+</script>
 </body>
 </html>

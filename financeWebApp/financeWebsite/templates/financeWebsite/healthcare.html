@@ -4,19 +4,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page </title>
-    <link rel = "stylesheet" href = "{% static 'financeWebsite/landing.css' %}">
+    <title> Health and Wellness</title>
+    <link rel = "stylesheet" href = "{% static "financeWebsite/childPages.css" %}">
     <!-- <script src = "interact.js"> </script> -->
     <script src="https://kit.fontawesome.com/4e5c25ee1a.js" crossorigin="anonymous"></script>
-    <link rel = "javascript" href = "{% static 'financeWebsite/js/interact.js' %}">
 </head>
 <body>
-
-    <div id="header">
-
+    <div id="contact">
     <div class="container">
-    <nav>
+        <nav>
         <div class="logo">
             <img src = "{% static 'financeWebsite/images/logo 1.2.png' %}" width = "350px" height = "130px" alt = "logo">
         </div>
@@ -25,30 +21,20 @@
             <li> <a href = "{% url 'financeWebsite:about' %}"> About </a></li>
             <li> <a href = "{% url 'financeWebsite:services' %}"> Services </a></li>
             <li> <a href = "{% url 'financeWebsite:contact' %}"> Contact </a></li>
-            <i class="fa-regular fa-xmark" onclick = "closemenu()"></i>
+           <i class="fa-regular fa-xmark" onclick = "closemenu()"></i>
         </ul>
-         <i class="fa-regular fa-bars" onclick = "openmenu()"></i>
-    </nav>
-        <div class = "contain">
-            <div class = "card">
-                <div class = "photo">
-                    <img src = "{% static 'financeWebsite/images/IMG_3039.jpeg' %}" height = "600" width = "400" alt = "picture">
-                </div>
-            <div class = "intro">
-                <h1> Hi, I'm Charana... </h1>
-                <p> I am a financial strategist. My goal is to help individuals like yourself build a better
-                financial future. </p>
-            </div>
-        </div>
-        </div>
+       <i class="fa-regular fa-bars" onclick = "openmenu()"></i>
+        </nav>
     </div>
-        <div class = "mission">
-    <h1> Mission Statement</h1>
-    <p> The Mission of CDLC Finance is to provide our clients with a personalized and intimate
-        approach to shaping a financially free future. </p>
-
-</div>
-</div>
+    </div>
+        <h1 class = "title"> Health and Wellness </h1>
+        <div class = "contain">
+        <iframe width="700" height="400" src="https://www.youtube.com/embed/f3dBPulbLSk?si=2cmxXBdNpz3bcj_f&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <p class = "description">In this comprehensive YouTube video, we delve into the essential
+            strategies and tips for planning a secure and fulfilling retirement. Whether you're just starting your
+            career or nearing retirement age, this guide offers valuable insights to help you build a strong financial
+            foundation for your golden years.</p>
             <div class="copyright">
             <p class = "footer"> Copyright <i class="fa-regular fa-copyright"></i> Charana de la Cruz | 2024 </p>
                 <div class = "social-icons">
@@ -59,7 +45,6 @@
             </div>
 
 <script>
-
 var sidemenu = document.getElementById("sidemenu");
 
     function openmenu() {
@@ -71,7 +56,7 @@ var sidemenu = document.getElementById("sidemenu");
 
         sidemenu.style.right = "-200px";
     }
-
 </script>
+
 </body>
 </html>
