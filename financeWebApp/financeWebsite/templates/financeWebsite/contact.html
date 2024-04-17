@@ -14,7 +14,7 @@
     <div class="container">
         <nav>
         <div class="logo">
-            <img src = "{% static 'financeWebsite/images/logo 1.2.png' %}" width = "350px" height = "130px" alt = "logo">
+            <img src = "{% static 'financeWebsite/images/realLogo.png' %}" width = "225px" height = "120px" alt = "logo">
         </div>
         <ul id = "sidemenu">
             <li> <a href = "{% url 'financeWebsite:index' %}"> Home </a></li>
@@ -25,52 +25,23 @@
         </ul>
        <!--  <i class="fa-regular fa-bars" onclick = "openmenu()"></i> -->
         </nav>
-        <div id= "begin">
-        <hr width="45%;" color= 2C96CE size="5">
-        <h1 id="text">Contact Me</h1>
-        <hr width="45%;" color=2C96CE size="5">
-
-    </div>
-        <div class="row">
+        <div class="content">
             <div class="contact-left">
-                <p><i class="fa-solid fa-paper-plane"></i> Charanadelacruz@gmail.com</p>
-                <p><i class="fa-solid fa-phone"></i> 801-673-1457</p>
+                <div class="icon"><i class="fa-regular fa-paper-plane"></i></div>
+                <h2>Email: Charanadelacruz@gmail.com</h2>
+                <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                <h2>Phone: 801-673-1457</h2>
             </div>
             <div class="contact-right">
-                <form name = "submit-to-google-sheet">
+                <h2>Contact Information</h2>
+                <form action="{% url 'financeWebsite:submit_contact' %}" method="post">
                     {% csrf_token %}
-                    <input type = "text" name = "Name" placeholder = "Your Name" required>
-                    <input type="email" name="Email" placeholder=" Your Email" required>
-                    <textarea name = "Message" rows = "6" placeholder = "Your Message"></textarea>
-                    <div id="submit-temp">Submit</div>
+                    {{ form }}
+                    <input id="submit-button" type="submit" value="Submit" />
                 </form>
-                <span id = "msg"> </span>
             </div>
         </div>
     </div>
     </div>
-
-    <div class="copyright">
-            <p class = "footer"> Copyright <i class="fa-regular fa-copyright"></i> Charana de la Cruz | 2024 </p>
-                <div class = "social-icons">
-                    <a href = "https://www.instagram.com/charanadelacruz/"> <i class="fa-brands fa-instagram"></i></a>
-                    <a href = ""> <i class="fa-brands fa-facebook"></i></a>
-                    <a href = ""> <i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-
-<script>
-var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu() {
-
-        sidemenu.style.right = "0";
-
-    }
-    function closemenu() {
-
-        sidemenu.style.right = "-200px";
-    }
-</script>
 </body>
 </html>

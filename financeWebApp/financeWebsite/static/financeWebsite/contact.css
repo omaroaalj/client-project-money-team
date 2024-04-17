@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
     box-sizing: border-box;
 }
 
@@ -13,68 +14,48 @@ body {
     height: 100vh;
     background-color: #F2F8F9;
 }
-#begin{
-   text-align: center;
-    display: flex;
-    align-items: center;
-}
-h1{
-    font-size:2.25rem;
-    color:#30302E;
-    margin-left: 2.25rem;
-    margin-right: 2.25rem;
-    font-family: "Cantana One";
-    white-space:nowrap;
-}
-
-p {
-    font-family: "PT Sans";
-}
 
 .container {
     padding: 10px 10%;
 }
 
-.contact-left {
-    flex-basis: 35%;
+.social-icons {
+    margin-top: 0;
 }
 
-.contact-right {
-    flex-basis: 60%;
-}
-
-.contact-left p {
-    margin-top:30px;
-
-}
-
-.contact-left p i {
-    color: #2C96CE;
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
     margin-right: 15px;
-    font-size: 25px;
+    color: #ababab;
+    transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+    color: #2C96CE;
+    transform: translateY(-5px);
 }
 
 .btn.btn2 {
-    display: inline-block;
     background: #ababab;
     margin-left: 330px;
 
 }
 
-.contact-right form {
-    width: 100%;
+.contact-right {
+    flex: 1;
 }
 
 form input, form textarea {
-    width: 50%;
+    width: 100%;
     border: 0;
     outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 15px 330px;
-    color: #fff;
+    background: #D9D9D9;
+    padding: 0.25em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: #000000;
     font-size: 18px;
-    border-radius: 6px;
 }
 
 form .btn2 {
@@ -82,6 +63,25 @@ form .btn2 {
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+}
+
+.copyright i {
+    font-size: 10px;
+    color: #501537;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #fff;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.contact-left {
+    flex: 1;
+    font-size: 1.25em;
 }
 
 .contact-left h1 {
@@ -129,126 +129,16 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-#submit-temp {
-    border: 1px solid black;
-    width: fit-content;
-    border-spacing: inherit;
-    margin-left: 35rem;
-    padding: 0.5rem;
+.content {
+    display: flex;
+}
+
+h2 {
+    font-weight: normal;
+    margin-bottom: 0.5em;
+}
+
+#submit-button:hover {
     background-color: #2C96CE;
     color: white;
 }
-
-.copyright i {
-    font-size: 20px;
-    color: #fff;
-    text-align: center;
-    justify-content: center;
-}
-
-.copyright {
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    background: #262626;
-    font-weight: 300;
-    margin-top: 9rem;
-    color: white;
-}
-
-.footer {
-    font-family: "Montserrat";
-}
-
-.social-icons {
-    display: inline-block;
-    justify-content: space-between;
-    list-style: none;
-    margin: .5em;
-}
-
-nav .fa-regular {
-    display: none;
-}
-
-@media only screen and (max-width: 600px) {
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Optional: center-align items */
-    }
-
-
-    .header-text {
-        font-size: 16px;
-        order: 1; /* Move header text below image */
-        margin-top: 10px; /* Adjust margin as needed */
-    }
-
-    .header-text h1 {
-        font-size: 30px;
-    }
-
-    nav .fa-regular {
-        display: block;
-        font-size: 25px;
-        cursor: pointer;
-    }
-
-    nav ul {
-        background: #2C96CE;
-        position: fixed;
-        top: 0;
-        right: -200px;
-        width: 200px;
-        height: 100vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right 0.5s;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 25px;
-    }
-
-    nav ul .fa-regular {
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
-
-    .sub-title {
-        font-size: 40px;
-    }
-
-    .about-col-1, .about-col-2 {
-        flex-basis: 100%;
-    }
-
-    .about-col-1 {
-        margin-bottom: 30px;
-    }
-
-    .about-col-2 {
-        font-size: 14px;
-
-    }
-
-    .tab-links {
-        font-size: 16px;
-        margin-right: 20px;
-    }
-
-    .contact-left, .contact-right {
-        flex-basis: 100%;
-    }
-
-    .copyright {
-        font-size: 14px;
-    }
-}
-
-
