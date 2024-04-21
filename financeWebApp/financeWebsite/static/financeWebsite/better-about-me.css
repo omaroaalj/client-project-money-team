@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin:0;
     padding: 0;
     font-family: sans-serif;
     box-sizing: border-box;
@@ -59,58 +59,13 @@ nav ul li a:hover::after {
     width: 100%;
 }
 
-.contain {
-    display: flex;
-    justify-content: flex-start;
-}
-
+/*stuff for the meet charana w/line*/
 #meet{
    text-align: center;
-     display: flex;
-    align-items: center;
-
-}
-.picture img{
-    border: .5vh solid;
-    border-color: #2C96CE;
-    border-radius: 12vh;
-    box-shadow:5px 3px 22px 0 grey;
-}
-#culture {
     display: flex;
     align-items: center;
-    margin-bottom:1em;
-    margin-right:1em;
-}
-#culture img{
-    margin-left: 1em;
-    margin-right: 2em;
-}
-
-
-#family img{
-    float:right;
-    margin-left: 2em;
-    margin-right: 1em;
-}
-#family {
-    display:flex;
-    align-items:center;
-    margin-left: 1em;
-
-}
-.picture p{
-    font-size: 1.50rem;
-    color: #5A5A54;
-    font-weight: normal;
-    font-family: "PT Sans";
-}
-
-.family p{
-    font-size: 1.50rem;
-    color: #5A5A54;
-    font-weight: normal;
-    font-family: "PT Sans";
+    margin-left:9em;
+    margin-right:9em;
 }
 h1{
     font-size:2.25rem;
@@ -119,13 +74,83 @@ h1{
     margin-right: 2.25rem;
     font-family: "Cantana One";
     white-space:nowrap;
+}
+/*for the picture slideshow*/
+.content{
+    margin-left:12em;
+    margin-top:3em;
+    margin-bottom:3em;
+    margin-right:5em;
+  border-radius: 5px;
+    width:322px;
+    height:430px;
+  overflow: hidden;
 
+  box-shadow:3px 3px 10px 0 grey;
+  z-index: -1;
+}
+.show {
+  margin: auto;
+  justify-content: left;
+  align-items: center;
+  font-style: italic;
+  width: fit-content;
+}
+.slide_content {
+  float: left;
+    width:322.4px;
+    height:430.4px;
 }
 
 .footer {
     font-family: "Montserrat";
 }
 
+
+.slides {
+    width: 60.5em;
+  -webkit-animation-name:slide;
+  -webkit-animation-duration: 15s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes slide {
+  20% {
+    margin-left: 0;
+  }
+  40% {
+    margin-left: calc(-323px * 1);
+  }
+  60% {
+    margin-left: calc(-323px * 2);
+  }
+}
+
+/*bio section*/
+.bio{
+    display:flex;
+    align-items:center;
+}
+
+.words{
+    flex:1;
+    text-align:center;
+    margin-right:12em;
+}
+h2{
+    font-size: 2em;
+    font-family: "PT Sans";
+    margin-bottom:.5em;
+}
+p{
+    font-size: 1.25em;
+    font-family: "PT Sans";
+}
+
+/*copyright*/
 .copyright i {
     font-size: 20px;
     color: #fff;
@@ -157,7 +182,7 @@ nav .fa-regular {
 
 @media only screen and (max-width: 600px) {
 
-    .container {
+    .container{
         display: flex;
         flex-direction: column;
         align-items: center; /* Optional: center-align items */
