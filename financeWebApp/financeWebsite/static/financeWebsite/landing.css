@@ -183,7 +183,7 @@ span {
 
 /* --------- CSS for Small Screen -------- */
 
-nav .fa-regular {
+nav .fa-solid {
     display: none;
 }
 
@@ -226,7 +226,7 @@ nav .fa-regular {
         margin-bottom: 20px; /* Add some space below the photo */
     }
 
-    nav .fa-regular {
+    nav .fa-solid {
         display: block;
         font-size: 25px;
         cursor: pointer;
@@ -254,7 +254,7 @@ nav .fa-regular {
         margin: 25px;
     }
 
-    nav ul .fa-regular {
+    nav ul .fa-solid {
         position: absolute;
         top: 25px;
         left: 25px;
