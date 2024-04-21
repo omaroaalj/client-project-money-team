@@ -280,7 +280,7 @@ span {
     }
 }
 
-nav .fa-regular {
+nav .fa-solid {
     display: none;
 }
 
@@ -303,7 +303,7 @@ nav .fa-regular {
         font-size: 30px;
     }
 
-    nav .fa-regular {
+    nav .fa-solid {
         display: block;
         font-size: 25px;
         cursor: pointer;
@@ -326,7 +326,7 @@ nav .fa-regular {
         margin: 25px;
     }
 
-    nav ul .fa-regular {
+    nav ul .fa-solid {
         position: absolute;
         top: 25px;
         left: 25px;
