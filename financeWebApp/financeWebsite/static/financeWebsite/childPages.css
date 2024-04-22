@@ -8,6 +8,17 @@ body {
     background-color: #F2F8F9;
 }
 
+#thanks {
+    flex: 1;
+    padding: 1em;
+    font-size: 2em;
+}
+
+#thanks-text {
+    display: flex;
+    text-align: center;
+}
+
 .container {
     padding: 10px 10%;
 }
