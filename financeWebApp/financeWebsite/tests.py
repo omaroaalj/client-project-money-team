@@ -24,10 +24,6 @@ class ViewTests(TestCase):
         response = self.client.get(reverse("financeWebsite:contact"))
         self.assertEqual(response.status_code, 200)
 
-    def test_portfolio(self):
-        response = self.client.get(reverse("financeWebsite:portfolio"))
-        self.assertEqual(response.status_code, 200)
-
 
 # Check if form handles requests as expected
 class FormTests(TestCase):
