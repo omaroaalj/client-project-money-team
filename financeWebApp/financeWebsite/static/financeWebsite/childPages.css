@@ -193,7 +193,7 @@ nav {
 
         .description {
             position: absolute;
-            top: 12rem;
             left: -12rem;
+            top: 15rem;
         }
     }
