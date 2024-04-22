@@ -192,5 +192,12 @@ nav {
             height: 350px;
             border: none;
             margin-left: 10px;
+            top: 12rem;
+        }
+
+        .description {
+            position: absolute;
+            top: 12rem;
+            left: -12rem;
         }
     }
