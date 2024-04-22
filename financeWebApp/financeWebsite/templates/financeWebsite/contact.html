@@ -13,23 +13,21 @@
     <div class="container">
         <nav>
         <div class="logo">
-            <img src = "{% static 'financeWebsite/images/realLogo.png' %}" width = "225px" height = "120px" alt = "logo">
+            <img src = "{% static 'financeWebsite/images/logo 1.2.png' %}" width = "350px" height = "130px" alt = "logo">
         </div>
         <ul id = "sidemenu">
             <li> <a href = "{% url 'financeWebsite:index' %}"> Home </a></li>
             <li> <a href = "{% url 'financeWebsite:about' %}"> About </a></li>
             <li> <a href = "{% url 'financeWebsite:services' %}"> Services </a></li>
             <li> <a href = "{% url 'financeWebsite:contact' %}"> Contact </a></li>
-           <!--  <i class="fa-regular fa-xmark" onclick = "closemenu()"></i> -->
+           <i class="fa-solid fa-x" onclick = "closemenu()"></i>
         </ul>
-       <!--  <i class="fa-regular fa-bars" onclick = "openmenu()"></i> -->
+       <i class="fa-solid fa-bars" onclick = "openmenu()"></i>
         </nav>
         <div class="content">
             <div class="contact-left">
-                <div class="icon"><i class="fa-regular fa-paper-plane"></i></div>
-                <h2>Email: <a href="mailto:Charanadelacruz@gmail.com">Charanadelacruz@gmail.com</a></h2>
-                <div class="icon"><i class="fa-solid fa-phone"></i></div>
-                <h2>Phone: 801-673-1457</h2>
+                <h2 class = "email">Email: <a href="mailto:Charanadelacruz@gmail.com">Charanadelacruz@gmail.com</a></h2>
+                <h2 class = "number">Phone: 801-673-1457</h2>
             </div>
             <div class="contact-right">
                 <h2>Contact Information</h2>
@@ -49,5 +47,19 @@
                 <a href = ""> <i class="fa-brands fa-linkedin"></i></a>
             </div>
     </div>
+
+<script>
+var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+
+        sidemenu.style.right = "0";
+
+    }
+    function closemenu() {
+
+        sidemenu.style.right = "-200px";
+    }
+</script>
 </body>
 </html>
