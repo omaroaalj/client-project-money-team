@@ -265,6 +265,20 @@ nav .fa-solid {
     margin-top: -40px;
     display: block;
 }
+    .bio{
+   display: flex;
+   flex-direction: column;
+   justify-items:center;
+
+
+}
+.bio .content{
+   margin-left:5rem;
+}
+.bio .words{
+   margin-left:9rem;
+}
+
 }
 
 
