@@ -24,6 +24,21 @@ class ViewTests(TestCase):
         response = self.client.get(reverse("financeWebsite:contact"))
         self.assertEqual(response.status_code, 200)
 
+    def test_retirement(self):
+        response = self.client.get(reverse("financeWebsite:retirement"))
+        self.assertEqual(response.status_code, 200)
+
+    def test_alt_investments(self):
+        response = self.client.get(reverse("financeWebsite:alternativeInvestments"))
+        self.assertEqual(response.status_code, 200)
+
+    def test_life_insurance(self):
+        response = self.client.get(reverse("financeWebsite:lifeInsurance"))
+        self.assertEqual(response.status_code, 200)
+
+    def test_healthcare(self):
+        response = self.client.get(reverse("financeWebsite:healthcare"))
+        self.assertEqual(response.status_code, 200)
 
 # Check if form handles requests as expected
 class FormTests(TestCase):
