@@ -200,22 +200,23 @@ nav .fa-solid {
         top: auto; /* Reset top positioning */
         right: auto; /* Reset right positioning */
         width: 80%; /* Adjust the width to fit smaller screens, you can tweak this value */
-        margin-left: 7rem; /* Add some margin above and below for spacing */
+        text-align: center;
+        margin-left: 7rem;
     }
 
     /* Adjust the mission statement text size if necessary */
     .mission h1 {
         font-size: 2.5em; /* Adjust the size to fit smaller screens */
-        right: auto; /* Reset any specific right positioning */
         margin-top: 10px; /* Adjust the margin top for spacing */
         text-align: center; /* Center-align the heading */
+        margin-right: 4rem;
     }
 
     .mission p {
         font-size: 1em; /* Adjust the paragraph text size for readability on small screens */
         width: auto; /* Let the width naturally adjust to the parent container */
         margin-right: 7rem;
-        margin-top: 1rem;
+        margin-top: 5rem;
     }
 
     /* Here, adjust any other elements that need to change on smaller screens */

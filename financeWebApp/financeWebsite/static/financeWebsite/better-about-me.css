@@ -69,11 +69,11 @@ nav ul li a:hover::after {
 }
 h1{
     font-size:2.25rem;
-    color:#30302E;
     margin-left: 2.25rem;
     margin-right: 2.25rem;
     font-family: "Cantana One";
     white-space:nowrap;
+    color: #000000;
 }
 /*for the picture slideshow*/
 .content{
@@ -139,11 +139,13 @@ h1{
     flex:1;
     text-align:center;
     margin-right:12em;
+    color: black;
 }
 h2{
     font-size: 2em;
     font-family: "PT Sans";
     margin-bottom:.5em;
+    color: #5A5A54;
 }
 p{
     font-size: 1.25em;

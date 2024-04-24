@@ -307,6 +307,7 @@ nav .fa-solid {
         font-size: 16px;
         order: 1; /* Move header text below image */
         margin-top: 10px; /* Adjust margin as needed */
+        color: #5A5A54;
     }
 
     .header-text h1 {
