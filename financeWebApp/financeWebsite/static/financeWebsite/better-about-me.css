@@ -179,7 +179,7 @@ nav .fa-solid {
     display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 1200px) {
 
     .container{
         display: flex;
@@ -276,7 +276,12 @@ nav .fa-solid {
 .bio .words{
    margin-left:9rem;
 }
-
+p{
+    font-size:1.5em;
+}
+h2{
+    font-size:2em;
+}
 }
 
 
