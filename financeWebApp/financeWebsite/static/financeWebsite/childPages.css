@@ -123,6 +123,20 @@ nav {
             align-items: center; /* Optional: center-align items */
         }
 
+        .lo {
+        margin-top: 2rem;
+        width: 200px;
+        height: 80px;
+        }
+
+        a:hover {
+        color: white;
+        }
+
+        nav ul .fa-solid:hover {
+        color: white;
+        }
+
         .header-text {
             font-size: 16px;
             order: 1; /* Move header text below image */
@@ -204,7 +218,8 @@ nav {
 
         .description {
             position: absolute;
-            left: -12rem;
-            top: 15rem;
+            margin-left: 1em;
+            margin-top: -15em;
+            width: 90%;
         }
     }

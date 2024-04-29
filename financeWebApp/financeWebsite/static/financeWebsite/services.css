@@ -302,6 +302,12 @@ nav .fa-solid {
         align-items: center; /* Optional: center-align items */
     }
 
+    .lo {
+        margin-top: 2rem;
+        width: 200px;
+        height: 80px;
+    }
+
 
     .header-text {
         font-size: 16px;
@@ -318,6 +324,14 @@ nav .fa-solid {
         display: block;
         font-size: 25px;
         cursor: pointer;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+    nav ul .fa-solid:hover {
+        color: white;
     }
 
     nav ul {
