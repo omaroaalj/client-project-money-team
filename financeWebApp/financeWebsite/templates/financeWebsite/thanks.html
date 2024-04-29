@@ -10,6 +10,11 @@
     <!-- <script src = "interact.js"> </script> -->
      <script src="https://kit.fontawesome.com/4e5c25ee1a.js" crossorigin="anonymous"></script>
 </head>
+<style>
+        .copyright {
+            margin-top: 25rem;
+        }
+    </style>
 <body>
     <div id="header">
     <div class="container">
@@ -22,17 +27,16 @@
             <li> <a href = "{% url 'financeWebsite:about' %}"> About </a></li>
             <li> <a href = "{% url 'financeWebsite:services' %}"> Services </a></li>
             <li> <a href = "{% url 'financeWebsite:contact' %}"> Contact </a></li>
-           <i class="fa-regular fa-xmark" onclick = "closemenu()"></i>
+           <i class="fa-solid fa-x" onclick = "closemenu()"></i>
         </ul>
-       <i class="fa-regular fa-bars" onclick = "openmenu()"></i>
+       <i class="fa-solid fa-bars" onclick = "openmenu()"></i>
     </nav>
         <div id="thanks-text">
-            <p id="thanks">Thanks for filling out the form.</p>
+            <p id="thanks">Thank you for filling out the form.</p>
         </div>
         
     </div>
     </div>
-
     <div class="copyright">
             <p class = "footer"> Copyright <i class="fa-regular fa-copyright"></i> Charana de la Cruz | 2024 </p>
                 <div class = "social-icons">
@@ -41,22 +45,6 @@
                     <a href = ""> <i class="fa-brands fa-linkedin"></i></a>
                 </div>
             </div>
-
-    <style>
-        .lo {
-        margin-top: 2rem;
-        width: 200px;
-        height: 80px;
-        }
-
-        a:hover {
-        color: white;
-        }
-
-        nav ul .fa-solid:hover {
-        color: white;
-        }
-    </style>
 <script>
 var sidemenu = document.getElementById("sidemenu");
 
@@ -68,7 +56,6 @@ var sidemenu = document.getElementById("sidemenu");
 
     }
     function closemenu() {
-
         sidemenu.style.right = "-200px";
     }
 </script>
