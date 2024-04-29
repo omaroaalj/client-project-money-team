@@ -14,7 +14,7 @@
     <div class="container">
     <nav>
         <div class="logo">
-            <img src = "{% static 'financeWebsite/images/logo 1.2.png' %}" width = "350px" height = "130px" alt = "logo">
+            <img class = "lo" src = "{% static 'financeWebsite/images/logo 1.2.png' %}" width = "350px" height = "130px" alt = "logo">
         </div>
         <ul id = "sidemenu">
             <li> <a href = "{% url 'financeWebsite:index' %}"> Home </a></li>
@@ -52,15 +52,19 @@
     </div>
     
     <div class="words">
-       <h2>About Me</h2>
-        <p>I was born in Cambodia but came to the US as a refugee at the young age of 9 years old. Most of the work I do has been in the financial services industry and I have also worked in life insurance for many years. My main goal is to help people get out of debt and build wealth so they can live out their dreams. My services include retirement planning, alternative investments, life insurance policies and healthcare planning.
+       <h2 class = "about">About Me</h2>
+        <p class = "description">I was born in Cambodia but came to the US as a refugee at the young age of 9 years old.
+            Most of the work I do has been in the financial services industry and I have also worked in life insurance
+            for many years. My main goal is to help people get out of debt and build wealth so they can live out their
+            dreams. My services include retirement planning, alternative investments, life insurance policies and healthcare
+            planning.
 </p> 
     </div>
 </div>
 
 {#The footer#}
  <div class="copyright">
-            <p> Copyright <i class="fa-regular fa-copyright"></i> Charana de ls Cruz | 2024 </p>
+            <p class = "footer"> Copyright <i class="fa-regular fa-copyright"></i> Charana de la Cruz | 2024 </p>
 
                 <div class = "social-icons">
                     <a href = "https://www.instagram.com/charanadelacruz/"> <i class="fa-brands fa-instagram"></i></a>

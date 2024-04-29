@@ -1,8 +1,8 @@
 * {
     margin:0;
     padding: 0;
-    font-family: sans-serif;
     box-sizing: border-box;
+    font-family: "PT Sans";
 }
 
 html {
@@ -89,6 +89,10 @@ h1{
   box-shadow:3px 3px 10px 0 grey;
   z-index: -1;
 }
+
+.about {
+    color: #2C96CE;
+}
 .show {
   margin: auto;
   justify-content: left;
@@ -102,10 +106,26 @@ h1{
     height:430.4px;
 }
 
+.copyright i {
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 9rem;
+    color: white;
+}
+
 .footer {
     font-family: "Montserrat";
 }
-
 
 .slides {
     width: 60.5em;
@@ -161,14 +181,14 @@ p{
 }
 
 .copyright {
-    width: 100%;
-    text-align: center;
-    padding: 25px 0;
-    background: #262626;
-    font-weight: 300;
-    color: white;
-    margin-top: 7rem;
-}
+        width: 100%;
+        text-align: center;
+        padding: 25px 0;
+        background: #262626;
+        font-weight: 300;
+        margin-top: 7.5rem;
+        color: white;
+    }
 
 .social-icons {
     display: inline-block;
@@ -181,14 +201,39 @@ nav .fa-solid {
     display: none;
 }
 
-@media (max-width: 1200px) {
+@media only screen and (max-width: 600px) {
 
-    .container{
+    .container {
         display: flex;
         flex-direction: column;
         align-items: center; /* Optional: center-align items */
     }
 
+    .description {
+        position: absolute;
+        margin-left: -10rem;
+        margin-top: 3rem;
+        width: 90%;
+    }
+
+    .about {
+        position: absolute;
+        margin-left: -3rem;
+    }
+
+    .lo {
+        margin-top: 2rem;
+        width: 200px;
+        height: 80px;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+    nav ul .fa-solid:hover {
+        color: white;
+    }
 
     .header-text {
         font-size: 16px;
@@ -244,7 +289,6 @@ nav .fa-solid {
 
     .about-col-2 {
         font-size: 14px;
-
     }
 
     .tab-links {
@@ -252,25 +296,18 @@ nav .fa-solid {
         margin-right: 20px;
     }
 
-    .contact-left, .contact-right {
-        flex-basis: 100%;
-    }
-
-    .copyright {
+    .copyright .footer {
         font-size: 14px;
     }
 
-    #msg {
-    color: #61b752;
-    margin-top: -40px;
-    display: block;
-}
+    .copyright {
+        margin-top: 30rem;
+    }
+
     .bio{
    display: flex;
    flex-direction: column;
    justify-items:center;
-
-
 }
 .bio .content{
    margin-left:5rem;
@@ -284,7 +321,23 @@ p{
 h2{
     font-size:2em;
 }
+#text {
+    position: absolute;
+    margin-left: -3rem;
+    margin-top: 1rem;
 }
+hr {
+    display: none;
+}
+}
+
+    #msg {
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
+
+
 
 
 

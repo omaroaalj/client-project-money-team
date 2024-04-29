@@ -320,6 +320,10 @@ nav .fa-solid {
         font-size: 30px;
     }
 
+    hr {
+        display: none;
+    }
+
     nav .fa-solid {
         display: block;
         font-size: 25px;
