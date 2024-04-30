@@ -115,7 +115,7 @@ nav {
         display: none;
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-device-width: 600px) {
 
         .container {
             display: flex;
@@ -129,11 +129,11 @@ nav {
         height: 80px;
         }
 
-        a:hover {
+        nav ul .fa-solid:hover {
         color: white;
         }
 
-        nav ul .fa-solid:hover {
+        a:hover {
         color: white;
         }
 

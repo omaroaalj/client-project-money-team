@@ -304,38 +304,44 @@ nav .fa-solid {
         margin-top: 30rem;
     }
 
-    .bio{
-   display: flex;
-   flex-direction: column;
-   justify-items:center;
-}
-.bio .content{
-   margin-left:5rem;
-}
-.bio .words{
-   margin-left:9rem;
-}
-p{
-    font-size:1.5em;
-}
-h2{
-    font-size:2em;
-}
-#text {
-    position: absolute;
-    margin-left: -3rem;
-    margin-top: 1rem;
-}
-hr {
-    display: none;
-}
+    .bio {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+
+    .bio .content {
+        margin-left: 5rem;
+    }
+
+    .bio .words {
+        margin-left: 9rem;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    #text {
+        position: absolute;
+        margin-left: -3rem;
+        margin-top: 1rem;
+    }
+
+    hr {
+        display: none;
+    }
 }
 
     #msg {
     color: #61b752;
     margin-top: -40px;
     display: block;
-}
+    }
 
 
 
