@@ -37,6 +37,14 @@ form input, form textarea {
     font-size: 18px;
 }
 
+.header {
+    display: none;
+}
+
+.contact-right {
+    margin-top: 4rem;
+}
+
 form .btn2 {
     padding: 14px 60px;
     font-size: 18px;
@@ -108,6 +116,7 @@ h2 {
     font-weight: normal;
     margin-bottom: 0.5em;
 }
+
 
 #submit-button:hover {
     background-color: #2C96CE;
@@ -240,13 +249,25 @@ nav .fa-solid {
 
     .number {
         position: absolute;
-        top: 42rem;
+        top: 46rem;
         font-size: 1em;
     }
 
     .email {
         position: absolute;
-        top: 45rem;
+        top: 48rem;
         font-size: 1em;
+    }
+
+    .contact-right {
+        margin-top: 3rem;
+    }
+
+    .header {
+        display: flex;
+        margin-left: 7.5rem;
+        font-size: 2em;
+        margin-top: -1rem;
+        font-weight: 800;
     }
 }

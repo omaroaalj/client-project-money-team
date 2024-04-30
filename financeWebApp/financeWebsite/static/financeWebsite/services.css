@@ -33,6 +33,10 @@ body {
     padding: 10px 10%;
 }
 
+hr {
+    margin-top: 1.4rem;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -390,6 +394,14 @@ nav .fa-solid {
 
     .copyright {
         font-size: 14px;
+    }
+
+    #text {
+        margin-top: 2rem;
+    }
+
+    h2 {
+        font-size: 2em;
     }
 }
 

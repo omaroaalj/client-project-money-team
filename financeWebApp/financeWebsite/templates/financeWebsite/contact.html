@@ -31,7 +31,7 @@
                 <h2 class = "number">Phone: 801-673-1457</h2>
             </div>
             <div class="contact-right">
-                <h2>Contact Information</h2>
+                <h2 class = "header">Contact</h2>
                 <form action="{% url 'financeWebsite:submit_contact' %}" method="post">
                     {% csrf_token %}
                     {{ form }}

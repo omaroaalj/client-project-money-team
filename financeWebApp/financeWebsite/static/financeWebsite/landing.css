@@ -204,7 +204,7 @@ nav .fa-solid {
         margin: 0.3125em;
         visibility: hidden;
         opacity: 0;
-        width: 70%;
+        width: 80%;
         text-align: center;
     }
 
@@ -219,7 +219,7 @@ nav .fa-solid {
 }
 
     .intro h1 {
-        width: 70%;
+        width: 75%;
         text-align: center;
         font-size: 2em;
     }
@@ -242,10 +242,10 @@ nav .fa-solid {
     }
 
     .mission p {
-        font-size: 1em; /* Adjust the paragraph text size for readability on small screens */
+        font-size: 1.25em; /* Adjust the paragraph text size for readability on small screens */
         width: auto; /* Let the width naturally adjust to the parent container */
         margin-right: 3rem;
-        margin-left: -4rem;
+        margin-left: -6rem;
         margin-top: 6rem;
         padding: 5px;
     }
