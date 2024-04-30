@@ -219,7 +219,11 @@ nav {
         .description {
             position: absolute;
             margin-left: 1em;
-            margin-top: -15em;
+            margin-top: -25em;
             width: 90%;
+        }
+
+        .copyright {
+            margin-top: 1rem;
         }
     }
